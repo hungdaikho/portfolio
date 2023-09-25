@@ -26,6 +26,7 @@ const Header = ({}: Props) => {
               onClick={() => {
                 onChangeActiveMenu(menu.id);
               }}
+              key={menu.id}
             >
               <img src="/images/thang.png" alt="" />
               {menu.name}

@@ -45,7 +45,6 @@
         .menuItem:hover {
             color: rgb(162, 0, 255);
             letter-spacing: 2px;
-            transform: scale(1.5);
         }
         .menuItemActive{
             position: relative;
@@ -60,7 +59,6 @@
         .menuItemActive:hover {
             color: rgb(162, 0, 255);
             letter-spacing: 2px;
-            transform: scale(1.5);
         }
         .menuItemActive::after{
             content: "";
