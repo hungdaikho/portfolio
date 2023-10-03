@@ -1,14 +1,11 @@
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import styles from "./CanvasAction.module.scss";
 import { drawLineCanvas } from "@/utils/drawLineCanvas";
 type Props = {};
 const CanvasAction = ({}: Props) => {
-  const canvasRef: any = useRef(null);
   useEffect(() => {
-    if (canvasRef.current) {
-      drawLineCanvas(canvasRef.current);
-    }
+    drawLineCanvas();
   }, []);
-  return <canvas ref={canvasRef} className={styles.canvas}></canvas>;
+  return <canvas className={styles.canvas} id="canvas"></canvas>;
 };
 export default CanvasAction;

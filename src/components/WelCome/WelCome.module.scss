@@ -1,0 +1,102 @@
+.welcome {
+    width: 100%;
+    height: calc(100vh - 64px);
+    position: relative;
+
+    .welcomeContent {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        position: relative;
+
+        .text {
+            font-size: 40px;
+            width: 50%;
+            height: 100%;
+            gap: 20px;
+            letter-spacing: 2ox;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image {
+            width: 50%;
+            height: 100%;
+
+            .imageContent {
+                width: 100%;
+                height: 90%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .imageFooter {
+                width: 100%;
+                height: 10%;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+            }
+        }
+    }
+
+    .welcomeTitle {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+
+        .bounder {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: auto;
+
+            .titleContent {
+                width: 100%;
+                padding: 20px;
+                height: auto;
+                border: solid 1px rgba(255, 255, 255, 0.473);
+                border-bottom: solid 2px rgba(255, 255, 255, 0.473);
+                position: relative;
+
+                span {
+                    font-size: 26px;
+                    font-style: italic;
+                }
+
+            }
+
+            .titleContent::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                transform: translate(-50%, -50%);
+                width: 25.47px;
+                height: 20.7px;
+                background-image: url('/images/icon1.png');
+
+            }
+
+            .titleOwner {
+                width: auto;
+                padding: 10px;
+                border-bottom: solid 1px rgba(255, 255, 255, 0.473);
+                border-right: solid 1px rgba(255, 255, 255, 0.473);
+                border-left: solid 1px rgba(255, 255, 255, 0.473);
+                ;
+
+                span {
+
+                    font-size: 24px;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+}

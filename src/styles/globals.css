@@ -1,22 +1,45 @@
-body{
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,300;1,400&display=swap");
+body {
+  margin: 0;
+  padding: 0;
 }
-.landingPage{
-    width: 100vw;
-    height: 100vh;
-    background: #1E1E1E;
-    color: #fff;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center ;
+.landingPage {
+  width: 100vw;
+  height: 100vh;
+  background: #1e1e1e;
+  color: #fff;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
 }
-.container{
-    width: 80%;
-    background-color: #282C33;
-    height: auto;
-    position: relative;
-    overflow-x: hidden;
-    overflow-y: auto;
+.container {
+  width: 80%;
+  background-color: #282c33;
+  height: auto;
+  position: relative;
+}
+.network {
+  top: 0;
+  left: 4%;
+  padding: 5px;
+  padding-top: 0px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: auto;
+  height: auto;
+  position: absolute;
+}
+.btn {
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
