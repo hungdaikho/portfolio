@@ -1,7 +1,14 @@
+@media only screen and (max-width: 768px) {
+    .welcome {
+        margin-top: 48px !important;
+    }
+}
+
 .welcome {
     width: 100%;
     height: calc(100vh - 64px);
     position: relative;
+    margin-top: 64px;
 
     .welcomeContent {
         width: 100%;

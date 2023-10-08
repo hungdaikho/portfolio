@@ -14,6 +14,11 @@ body {
   display: flex;
   justify-content: center;
 }
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100% !important;
+  }
+}
 .container {
   width: 80%;
   background-color: #282c33;
@@ -42,4 +47,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.dropdownBtn {
+  background: transparent;
+  border: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  color: #fff;
+  letter-spacing: 0.5px;
+  font-size: 20px;
+}
+.ant-dropdown-menu {
+  padding: 0 !important;
+  border-radius: 0px !important;
+  background: #1e1e1e !important;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
 }

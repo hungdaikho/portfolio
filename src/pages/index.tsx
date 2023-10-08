@@ -23,7 +23,7 @@ const index = ({}: Props) => {
         />
       </div>
       <div className="container">
-        <CanvasAction />
+        {/* <CanvasAction /> */}
         <Header />
         <WelCome />
         <Main />
