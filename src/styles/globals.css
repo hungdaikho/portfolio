@@ -3,66 +3,34 @@ body {
   margin: 0;
   padding: 0;
 }
+:root {
+  --background-0: #fff;
+  --background-1: #f5f8fc;
+  --color-1: #1a1a1a;
+  --color-2: #7e7e7e;
+  --color-3: #666666;
+}
+[data-theme="dark"] {
+  --background-0: #111319;
+  --background-1: #191c26;
+  --color-1: #ffffff;
+  --color-2: #a9afc3;
+  --color-3: #ffffff;
+}
 .landingPage {
   width: 100vw;
   height: 100vh;
-  background: #1e1e1e;
-  color: #fff;
+  background: var(--background-0);
+  color: #1a1a1a;
   position: relative;
   overflow-x: hidden;
   overflow-y: auto;
   display: flex;
   justify-content: center;
 }
-@media only screen and (max-width: 768px) {
-  .container {
-    width: 100% !important;
-  }
-}
 .container {
   width: 80%;
-  background-color: #282c33;
   height: auto;
   position: relative;
 }
-.network {
-  top: 0;
-  left: 4%;
-  padding: 5px;
-  padding-top: 0px;
-  gap: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  width: auto;
-  height: auto;
-  position: absolute;
-}
-.btn {
-  width: 32px;
-  height: 32px;
-  background: transparent;
-  border: transparent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.dropdownBtn {
-  background: transparent;
-  border: none;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-  padding: 20px;
-  color: #fff;
-  letter-spacing: 0.5px;
-  font-size: 20px;
-}
-.ant-dropdown-menu {
-  padding: 0 !important;
-  border-radius: 0px !important;
-  background: #1e1e1e !important;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
-}
+/* #f5f8fc */
