@@ -9,6 +9,7 @@ body {
   --color-1: #1a1a1a;
   --color-2: #7e7e7e;
   --color-3: #666666;
+  --btn-1: #0000001a;
 }
 [data-theme="dark"] {
   --background-0: #111319;
@@ -16,6 +17,7 @@ body {
   --color-1: #ffffff;
   --color-2: #a9afc3;
   --color-3: #ffffff;
+  --btn-1: #ffffff33;
 }
 .landingPage {
   width: 100vw;
@@ -32,5 +34,29 @@ body {
   width: 80%;
   height: auto;
   position: relative;
+}
+#themeBtn {
+  position: absolute;
+  background: var(--btn-1);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  z-index: 1000;
+  border: none;
+  width: 56px;
+  height: 44px;
+  cursor: pointer;
+  right: 1%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#imgTheme {
+  width: 24px;
+  height: 24px;
 }
 /* #f5f8fc */
