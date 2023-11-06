@@ -1,9 +1,11 @@
+import menuSlice from "@/reducers/menuSlice";
 import themeSlice from "@/reducers/themeSlice";
 import { Action, configureStore, ThunkAction } from "@reduxjs/toolkit";
 
 export const store = configureStore({
   reducer: {
     theme: themeSlice,
+    menu: menuSlice,
   },
 });
 
