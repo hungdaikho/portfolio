@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 body {
   margin: 0;
   padding: 0;
@@ -6,6 +7,9 @@ body {
 :root {
   --background-0: #fff;
   --background-1: #f5f8fc;
+  --background-2: #d6e5f8;
+  --background-hover: #f5f5f5;
+  --span-background: #111319;
   --color-1: #1a1a1a;
   --color-2: #7e7e7e;
   --color-3: #666666;
@@ -14,21 +18,26 @@ body {
 [data-theme="dark"] {
   --background-0: #111319;
   --background-1: #191c26;
+  --background-2: #34495e;
+  --background-hover: #191c26;
+  --span-background: #fff;
   --color-1: #ffffff;
   --color-2: #a9afc3;
   --color-3: #ffffff;
   --btn-1: #ffffff33;
 }
+svg path {
+  fill: red !important;
+}
 .landingPage {
   width: 100vw;
   height: 100vh;
+  font-family: "Poppins";
   background: var(--background-0);
-  color: #1a1a1a;
+  color: var(--color-1);
   position: relative;
   overflow-x: hidden;
   overflow-y: auto;
-  display: flex;
-  justify-content: center;
 }
 .container {
   width: 80%;
@@ -36,7 +45,7 @@ body {
   position: relative;
 }
 #themeBtn {
-  position: absolute;
+  position: fixed;
   background: var(--btn-1);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -45,8 +54,8 @@ body {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   z-index: 1000;
   border: none;
-  width: 56px;
-  height: 44px;
+  width: 48px;
+  height: 36px;
   cursor: pointer;
   right: 1%;
   top: 50%;
@@ -56,7 +65,27 @@ body {
   align-items: center;
 }
 #imgTheme {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
 }
-/* #f5f8fc */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+  height: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
