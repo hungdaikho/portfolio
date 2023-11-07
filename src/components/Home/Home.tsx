@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import styles from "./Home.module.scss";
 import { ISocial } from "@/models/reducers/social.model";
 import { useAppSelector } from "@/redux/hook";
 import { RootState } from "@/redux/store";
+import { typingEffect } from "@/utils/typingEffect";
 type Props = {};
 
 const Home = ({}: Props) => {
+  const typingRef: any = useRef();
+  const cursor: any = useRef();
   const social: Array<ISocial> = useAppSelector(
     (state: RootState) => state.social
   );
+  useEffect(() => {
+    if (typingRef.current && cursor.current) {
+      typingEffect(typingRef.current, cursor.current);
+    }
+  }, []);
   return (
     <div className={styles.home}>
       <div className={styles.content}>
@@ -18,7 +26,8 @@ const Home = ({}: Props) => {
         <div className={styles.extract}>
           <h5>Hello, I'm Tran Van Hung</h5>
           <h1>
-            <span className={styles.typing}>Web Developer</span>
+            <span className={styles.typing} ref={typingRef}></span>
+            <span className={styles.cursorTyping} ref={cursor}></span>
           </h1>
           <p>
             I'm a Fullstack Developer based In Vietnam, over 4 years of
