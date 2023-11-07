@@ -1,5 +1,6 @@
+import About from "@/components/About/About";
+import Header from "@/components/Header/Header";
 import Home from "@/components/Home/Home";
-import Header from "@/components/header/Header";
 import { changeTheme } from "@/utils/theme";
 import React, { useState } from "react";
 type Props = {};
@@ -19,7 +20,7 @@ const index = ({}: Props) => {
     >
       <Header scroll={scroll} />
       <Home />
-      <div style={{ height: "100vh", width: "100vw" }}>B</div>
+      <About />
       <button
         id="themeBtn"
         onClick={() => {
