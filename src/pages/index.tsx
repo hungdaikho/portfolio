@@ -1,6 +1,7 @@
 import About from "@/components/About/About";
 import Header from "@/components/Header/Header";
 import Home from "@/components/Home/Home";
+import Service from "@/components/Service/Service";
 import { changeTheme } from "@/utils/theme";
 import React, { useState } from "react";
 type Props = {};
@@ -18,9 +19,11 @@ const index = ({}: Props) => {
         }
       }}
     >
+      <title>Van Hung T</title>
       <Header scroll={scroll} />
       <Home />
       <About />
+      <Service />
       <button
         id="themeBtn"
         onClick={() => {

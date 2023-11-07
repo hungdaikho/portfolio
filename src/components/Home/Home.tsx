@@ -17,6 +17,14 @@ const Home = ({}: Props) => {
       typingEffect(typingRef.current, cursor.current);
     }
   }, []);
+  const onDownloadCv = () => {
+    const url = "tranvanhung.pdf";
+    const link = document.createElement("a");
+    link.href = url;
+    link.target = "_blank";
+    link.download = "VanHungT.CV.pdf";
+    link.click();
+  };
   return (
     <div className={styles.home}>
       <div className={styles.content}>
@@ -36,13 +44,26 @@ const Home = ({}: Props) => {
           <div className={styles.social}>
             {social.map((s: ISocial) => {
               return (
-                <div key={s.value} className={styles.socialItem}>
+                <div
+                  key={s.value}
+                  className={styles.socialItem}
+                  onClick={() => {
+                    window.open(s.link);
+                  }}
+                >
                   <img src={s.src} alt="" />
                 </div>
               );
             })}
           </div>
-          <div className={styles.download}>Download CV</div>
+          <div
+            className={styles.download}
+            onClick={() => {
+              onDownloadCv();
+            }}
+          >
+            Download CV
+          </div>
         </div>
       </div>
     </div>

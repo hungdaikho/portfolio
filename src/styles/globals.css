@@ -15,6 +15,7 @@ body {
   --color-2: #7e7e7e;
   --color-3: #666666;
   --btn-1: #0000001a;
+  --skill: #34495e;
 }
 [data-theme="dark"] {
   --background-0: #111319;
@@ -26,6 +27,7 @@ body {
   --color-2: #a9afc3;
   --color-3: #ffffff;
   --btn-1: #ffffff33;
+  --skill: #34495e;
 }
 svg path {
   fill: red !important;

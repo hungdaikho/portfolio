@@ -19,21 +19,21 @@ export const defaultSocial: Array<ISocial> = [
   {
     value: "facebook",
     src: "./images/social/facebook.png",
-    link: "",
+    link: "https://www.facebook.com/profile.php?id=61552199285705",
   },
   {
     value: "twitter",
     src: "./images/social/twitter.png",
-    link: "",
+    link: "https://twitter.com/",
   },
   {
     value: "instagram",
     src: "./images/social/instagram.png",
-    link: "",
+    link: "https://www.instagram.com/",
   },
   {
     value: "linkedin",
     src: "./images/social/linkedin.png",
-    link: "",
+    link: "https://www.linkedin.com/in/hung-tran-9079a6257/",
   },
 ];

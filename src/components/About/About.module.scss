@@ -6,76 +6,338 @@
   justify-content: center;
   box-sizing: border-box;
   position: relative;
+
   .container {
     width: 100%;
     height: 100%;
     max-width: 1500px;
     padding: 0 20px;
     box-sizing: border-box;
+
     .title {
       width: 100%;
-      font-size: 32px;
+      font-size: 35px;
       color: var(--color-1);
       font-weight: 700;
       line-height: 1;
       margin: 0;
     }
+
     .content {
       padding-top: 60px;
       display: flex;
       box-sizing: border-box;
+
       .left {
         width: 100%;
         height: 100%;
         flex: 1 1;
+
         .info {
           width: 100%;
           margin-bottom: 55px;
           height: auto;
+
           h3 {
             font-size: 22px;
             font-weight: 500;
-            line-height: 1;
+            line-height: 0;
             color: var(--color-3);
+
             span {
               color: var(--color-1);
               font-weight: 600;
             }
           }
+
           p {
             max-width: 90%;
             font-size: 18px;
             color: var(--color-2);
           }
         }
+
         .skills {
           width: 100%;
+          font-size: 18px;
           height: auto;
+          color: var(--color-2);
+
+          p {
+            max-width: 90%;
+          }
+
           h3 {
             font-size: 22px;
-            line-height: 1;
+            line-height: 0;
             color: var(--color-1);
             font-weight: 600;
           }
+
+          .wrapper {
+            width: 100%;
+            margin-top: -20px;
+            padding-top: 40px;
+            height: auto;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+
+            .wrapperItem {
+              width: 50%;
+              padding: 0px 20px 0px 0px;
+              margin: 0 0 30px;
+              box-sizing: border-box;
+              height: auto;
+
+              .label {
+                font-size: 16px;
+                font-weight: 600;
+                letter-spacing: 2px;
+                margin-bottom: 20px;
+                color: var(--color-1);
+                text-shadow: none !important;
+              }
+
+              .experienceBound {
+                width: 100%;
+                padding: 2px;
+                height: 16px;
+                box-sizing: border-box;
+                border: solid 1px var(--color-2);
+                margin-top: 20px;
+
+                .experienceBar {
+                  width: 100%;
+                  height: 100%;
+                  background: var(--skill);
+                }
+
+                .react {
+                  width: 90%;
+                }
+
+                .next {
+                  width: 80%;
+                }
+
+                .nest {
+                  width: 75%;
+                }
+
+                .express {
+                  width: 85%;
+                }
+
+                .javascript {
+                  width: 95%;
+                }
+
+                .php {
+                  width: 60%;
+                }
+
+                .figma {
+                  width: 75%;
+                }
+
+                .git {
+                  width: 90%;
+                }
+
+                .wordpress {
+                  width: 90%;
+                }
+              }
+            }
+          }
+
+          .seeMore {
+            width: 100%;
+
+            button {
+              border: solid 1px var(--color-1);
+              border-radius: 10px;
+              background: transparent;
+              font-size: 18px;
+              padding: 12px 30px;
+              letter-spacing: 1px;
+              color: var(--color-1);
+              cursor: pointer;
+            }
+
+            button:hover {
+              background: var(--span-background);
+              color: var(--background-1);
+              border-color: transparent;
+            }
+          }
         }
       }
+
       .right {
         width: 100%;
         height: 100%;
         flex: 1 1;
-        padding-left: 120px;
+        padding-left: 200px;
         box-sizing: border-box;
+
+        .image {
+          width: 100%;
+          height: 100%;
+          position: relative;
+
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+          }
+
+          .experience {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            position: absolute;
+            background: var(--skill);
+            bottom: -50px;
+            left: -50px;
+
+            .info {
+              width: 100%;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              color: #fff;
+
+              h3 {
+                line-height: 0;
+                font-size: 35px;
+              }
+
+              span {
+                font-size: 19px;
+              }
+            }
+          }
+        }
       }
     }
   }
+
   @media only screen and (max-width: 1600px) {
     .container {
       max-width: 1170px;
+
+      .content {
+        .right {
+          padding-left: 120px;
+        }
+      }
     }
   }
+
   @media only screen and (max-width: 1040px) {
     .container {
       padding: 0px 20px;
+
+      .content {
+        flex-direction: column;
+
+        .left {
+          order: 2;
+
+          .info {
+            p {
+              max-width: 100%;
+            }
+          }
+
+          .skills {
+            width: 100%;
+            font-size: 18px;
+            height: auto;
+            color: var(--color-2);
+
+            p {
+              max-width: 90%;
+            }
+
+            h3 {
+              font-size: 22px;
+              line-height: 0;
+              color: var(--color-1);
+              font-weight: 600;
+            }
+
+            .wrapper {
+              width: 100%;
+              margin-top: -20px;
+              padding-top: 40px;
+              height: auto;
+              box-sizing: border-box;
+              display: flex;
+              flex-wrap: wrap;
+
+              .wrapperItem {
+                width: 100%;
+                padding: 0px 20px 0px 0px;
+                margin: 0 0 30px;
+                box-sizing: border-box;
+                height: auto;
+              }
+            }
+
+            .seeMore {
+              width: 100%;
+
+              button {
+                border: solid 1px var(--color-1);
+                border-radius: 10px;
+                background: transparent;
+                font-size: 18px;
+                padding: 12px 30px;
+                letter-spacing: 1px;
+                color: var(--color-1);
+                cursor: pointer;
+              }
+
+              button:hover {
+                background: var(--span-background);
+                color: var(--background-1);
+                border-color: transparent;
+              }
+            }
+          }
+        }
+
+        .right {
+          order: 1;
+          padding: 0;
+          margin-bottom: 80px;
+
+          .image {
+            .experience {
+              width: 150px;
+              height: 150px;
+              bottom: -50px;
+              left: 20px;
+
+              .info {
+                h3 {
+                  line-height: 0;
+                  font-size: 22px;
+                }
+
+                span {
+                  font-size: 13px;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
