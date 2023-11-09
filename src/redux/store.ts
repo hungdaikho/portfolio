@@ -1,4 +1,5 @@
 import menuSlice from "@/reducers/menuSlice";
+import serviceSlice from "@/reducers/serviceSlice";
 import socialSlice from "@/reducers/socialSlice";
 import themeSlice from "@/reducers/themeSlice";
 import { Action, configureStore, ThunkAction } from "@reduxjs/toolkit";
@@ -8,6 +9,7 @@ export const store = configureStore({
     theme: themeSlice,
     menu: menuSlice,
     social: socialSlice,
+    service: serviceSlice,
   },
 });
 

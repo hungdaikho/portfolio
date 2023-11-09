@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
 }
+/* #c9c9c982 */
 :root {
   --background-0: #fff;
   --background-1: #f5f8fc;
@@ -16,6 +17,7 @@ body {
   --color-3: #666666;
   --btn-1: #0000001a;
   --skill: #34495e;
+  --background-hover-2: #c9c9c977;
 }
 [data-theme="dark"] {
   --background-0: #111319;
@@ -28,6 +30,7 @@ body {
   --color-3: #ffffff;
   --btn-1: #ffffff33;
   --skill: #34495e;
+  --background-hover-2: #34495e;
 }
 svg path {
   fill: red !important;
