@@ -45,11 +45,11 @@ export const defaultMenu: Array<IMenu> = [
   {
     name: "Project",
     active: false,
-    value: "portfolio",
+    value: "project",
     src: "./images/menus/portfolio.svg",
   },
   {
-    name: "Testimonial",
+    name: "Certificate",
     active: false,
     value: "testimonial",
     src: "./images/menus/testimonial.svg",

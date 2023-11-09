@@ -1,4 +1,7 @@
 import About from "@/components/About/About";
+import Blog from "@/components/Blog/Blog";
+import Certificate from "@/components/Certificate/Certificate";
+import Contact from "@/components/Contact/Contact";
 import Header from "@/components/Header/Header";
 import Home from "@/components/Home/Home";
 import Portfoli from "@/components/Portfolio/Portfoli";
@@ -26,6 +29,9 @@ const index = ({}: Props) => {
       <About />
       <Service />
       <Portfoli />
+      <Certificate />
+      <Blog />
+      <Contact />
       <button
         id="themeBtn"
         onClick={() => {

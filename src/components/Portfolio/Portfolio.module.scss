@@ -5,12 +5,14 @@
   display: flex;
   justify-content: center;
   position: relative;
+
   .container {
     width: 100%;
     height: 100%;
     max-width: 1500px;
     padding: 0 20px;
     box-sizing: border-box;
+
     .title {
       width: 100%;
       font-size: 35px;
@@ -20,6 +22,7 @@
       margin: 0;
       letter-spacing: 1px;
     }
+
     .subTitle {
       width: 30%;
       margin-top: 20px;
@@ -27,21 +30,66 @@
       font-size: 18px;
       color: var(--color-2);
     }
+
     .content {
       padding: 60px 0px;
       height: auto;
+
       .item {
         box-sizing: border-box;
         padding: 20px;
         height: 100%;
+
         .card {
           width: 100%;
           height: 100%;
-          background: red;
+          border-radius: 10px;
+          overflow: hidden;
+          cursor: pointer;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .cardTitle {
+            position: absolute;
+            padding: 5px 20px;
+            font-size: 22px;
+            color: var(--color-1);
+            font-weight: 700;
+            letter-spacing: 2px;
+            width: auto;
+            background: var(--background-2);
+            text-align: center;
+            max-width: 100%;
+            border-radius: 5px;
+            opacity: 0;
+            transition: all 1s;
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            transform: scale(1.0);
+            transition: all 1s;
+          }
+        }
+
+        .card:hover {
+          img {
+            transform: scale(1.2);
+            transition: all 1s;
+          }
+
+          .cardTitle {
+            opacity: 1;
+          }
         }
       }
     }
   }
+
   @media only screen and (max-width: 1600px) {
     .container {
       max-width: 1170px;

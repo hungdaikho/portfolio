@@ -1,15 +1,36 @@
 .slick-slider.slick-initialized {
   height: 100% !important;
   width: 100%;
+
+  .slick-next:before {
+    display: none !important
+  }
+
+  .slick-prev:before {
+    display: none !important
+  }
+
+  .slick-dots li.slick-active button:before {
+    color: var(--color-1) !important;
+  }
+
+  .slick-dots li button:before {
+    color: var(--color-1) !important;
+  }
+
   .slick-list {
     height: 100% !important;
+
     .slick-track {
       height: 100% !important;
+
       .slick-slide {
         height: 100%;
+
         div {
           height: 100%;
         }
+
       }
     }
   }
