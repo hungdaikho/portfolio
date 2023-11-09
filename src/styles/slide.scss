@@ -1,0 +1,16 @@
+.slick-slider.slick-initialized {
+  height: 100% !important;
+  width: 100%;
+  .slick-list {
+    height: 100% !important;
+    .slick-track {
+      height: 100% !important;
+      .slick-slide {
+        height: 100%;
+        div {
+          height: 100%;
+        }
+      }
+    }
+  }
+}

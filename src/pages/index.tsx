@@ -1,6 +1,7 @@
 import About from "@/components/About/About";
 import Header from "@/components/Header/Header";
 import Home from "@/components/Home/Home";
+import Portfoli from "@/components/Portfolio/Portfoli";
 import Service from "@/components/Service/Service";
 import { changeTheme } from "@/utils/theme";
 import React, { useState } from "react";
@@ -24,6 +25,7 @@ const index = ({}: Props) => {
       <Home />
       <About />
       <Service />
+      <Portfoli />
       <button
         id="themeBtn"
         onClick={() => {
