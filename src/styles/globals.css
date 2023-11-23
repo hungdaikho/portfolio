@@ -15,9 +15,11 @@ body {
   --color-1: #1a1a1a;
   --color-2: #7e7e7e;
   --color-3: #666666;
+  --color-modal: #fff;
   --btn-1: #0000001a;
   --skill: #34495e;
   --background-hover-2: #c9c9c977;
+  --background-modal: rgba(0, 0, 0, 0.85);
 }
 [data-theme="dark"] {
   --background-0: #111319;
@@ -28,9 +30,11 @@ body {
   --color-1: #ffffff;
   --color-2: #a9afc3;
   --color-3: #ffffff;
+  --color-modal: #fff;
   --btn-1: #ffffff33;
   --skill: #34495e;
   --background-hover-2: #34495e;
+  --background-modal: rgba(0, 0, 0, 0.85);
 }
 svg path {
   fill: red !important;
@@ -58,7 +62,7 @@ svg path {
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  z-index: 1000;
+  z-index: 500;
   border: none;
   width: 48px;
   height: 36px;

@@ -11,7 +11,7 @@ export const typingEffect = (element: HTMLElement, cursor: HTMLElement) => {
       clearInterval(interval);
       setTimeout(() => {
         interval = setInterval(Delete, 100);
-      }, 400);
+      }, 300);
     }
   };
   const Delete = () => {

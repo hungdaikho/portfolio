@@ -3,9 +3,16 @@ import Slider from "react-slick";
 import styles from "./Portfolio.module.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useAppDispatch } from "@/redux/hook";
+import { setModal } from "@/reducers/modalSlice";
+import Pacs from "../Projects/Pacs";
+import Videoconference from "../Projects/VideoConference";
+import WebSpeech from "../Projects/WebSpeech";
+import CitizenV from "../Projects/CitizenV";
 type Props = {};
 const Portfoli = ({}: Props) => {
   const boundRef: any = useRef();
+  const dispatch = useAppDispatch();
   const [settings, setSettings] = useState({
     dots: true,
     infinite: true,
@@ -41,24 +48,68 @@ const Portfoli = ({}: Props) => {
         <div className={styles.content} ref={boundRef}>
           <Slider {...settings}>
             <div className={styles.item}>
-              <div className={styles.card}>
+              <div
+                className={styles.card}
+                onClick={() => {
+                  dispatch(
+                    setModal({
+                      open: true,
+                      width: "80%",
+                      content: <Pacs />,
+                    })
+                  );
+                }}
+              >
                 <img src="./images/portfolio/vrpacs.jpg" alt="" />
                 <p className={styles.cardTitle}>VrPacs - Pathology</p>
               </div>
             </div>
-            <div className={styles.item}>
+            <div
+              className={styles.item}
+              onClick={() => {
+                dispatch(
+                  setModal({
+                    open: true,
+                    width: "80%",
+                    content: <Videoconference />,
+                  })
+                );
+              }}
+            >
               <div className={styles.card}>
                 <img src="./images/portfolio/videoconference.jpg" alt="" />
                 <p className={styles.cardTitle}>Video Conference</p>
               </div>
             </div>
-            <div className={styles.item}>
+            <div
+              className={styles.item}
+              onClick={() => {
+                dispatch(
+                  setModal({
+                    open: true,
+                    width: "80%",
+                    content: <WebSpeech />,
+                  })
+                );
+              }}
+            >
               <div className={styles.card}>
                 <img src="./images/portfolio/webspeech.png" alt="" />
                 <p className={styles.cardTitle}>Web Speech API</p>
               </div>
             </div>
-            <div className={styles.item}>
+            <div
+              className={styles.item}
+              onClick={() => {
+                dispatch(
+                  setModal({
+                    open: true,
+                    width: "80%",
+                    content: <CitizenV />,
+                  })
+                );
+              }}
+            >
               <div className={styles.card}>
                 <img src="./images/portfolio/citizen.png" alt="" />
                 <p className={styles.cardTitle}>Citizen Manager App</p>

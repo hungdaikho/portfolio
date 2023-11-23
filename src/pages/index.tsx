@@ -4,6 +4,7 @@ import Certificate from "@/components/Certificate/Certificate";
 import Contact from "@/components/Contact/Contact";
 import Header from "@/components/Header/Header";
 import Home from "@/components/Home/Home";
+import Modal from "@/components/Modal/Modal";
 import Portfoli from "@/components/Portfolio/Portfoli";
 import Service from "@/components/Service/Service";
 import { changeTheme } from "@/utils/theme";
@@ -24,6 +25,7 @@ const index = ({}: Props) => {
       }}
     >
       <title>Van Hung T</title>
+      <Modal />
       <Header scroll={scroll} />
       <Home />
       <About />

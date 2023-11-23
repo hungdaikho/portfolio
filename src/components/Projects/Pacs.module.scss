@@ -1,0 +1,55 @@
+.pacs {
+  padding: 10px 50px;
+  position: relative;
+  .contentImage {
+    width: 100%;
+    height: auto;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  .contentProject {
+    padding: 0px 5px;
+    width: 100%;
+    margin-top: 10px;
+    .contentTitle {
+      width: 100%;
+      margin-bottom: 10px;
+      font-size: 24px;
+      font-weight: bold;
+      color: var(--color -1);
+    }
+    .text {
+      width: 100%;
+      padding: 0px 0px 0px 5px;
+      margin-bottom: 20px;
+    }
+    .technical {
+      width: 100%;
+      margin: 10px 0px;
+      .title {
+        font-weight: 700;
+      }
+      .technicalContent {
+        padding: 0px 0px 0px 5px;
+        gap: 5px;
+        flex-wrap: wrap;
+        display: flex;
+        .item {
+          width: 100%;
+          letter-spacing: 1px;
+          display: flex;
+          align-items: center;
+          color: var(--color-2);
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .pacs {
+    padding: 5px;
+  }
+}

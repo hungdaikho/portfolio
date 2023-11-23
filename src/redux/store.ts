@@ -1,4 +1,5 @@
 import menuSlice from "@/reducers/menuSlice";
+import modalSlice from "@/reducers/modalSlice";
 import serviceSlice from "@/reducers/serviceSlice";
 import socialSlice from "@/reducers/socialSlice";
 import themeSlice from "@/reducers/themeSlice";
@@ -10,6 +11,7 @@ export const store = configureStore({
     menu: menuSlice,
     social: socialSlice,
     service: serviceSlice,
+    modal: modalSlice,
   },
 });
 
