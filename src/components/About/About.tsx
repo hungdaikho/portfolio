@@ -4,7 +4,7 @@ type Props = {};
 
 const About = ({}: Props) => {
   return (
-    <div className={styles.about}>
+    <div className={styles.about} id="about">
       <div className={styles.container}>
         <h3 className={styles.title}>About Me</h3>
         <div className={styles.content}>

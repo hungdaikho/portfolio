@@ -9,6 +9,7 @@ import Pacs from "../Projects/Pacs";
 import Videoconference from "../Projects/VideoConference";
 import WebSpeech from "../Projects/WebSpeech";
 import CitizenV from "../Projects/CitizenV";
+import Bomberman from "../Projects/Bomberman";
 type Props = {};
 const Portfoli = ({}: Props) => {
   const boundRef: any = useRef();
@@ -41,7 +42,7 @@ const Portfoli = ({}: Props) => {
   }, []);
 
   return (
-    <div className={styles.portfolio}>
+    <div className={styles.portfolio} id="project">
       <div className={styles.container}>
         <div className={styles.title}>Project</div>
         <div className={styles.subTitle}>Some projects I have worked on</div>
@@ -64,59 +65,70 @@ const Portfoli = ({}: Props) => {
                 <p className={styles.cardTitle}>VrPacs - Pathology</p>
               </div>
             </div>
-            <div
-              className={styles.item}
-              onClick={() => {
-                dispatch(
-                  setModal({
-                    open: true,
-                    width: "80%",
-                    content: <Videoconference />,
-                  })
-                );
-              }}
-            >
-              <div className={styles.card}>
+            <div className={styles.item}>
+              <div
+                className={styles.card}
+                onClick={() => {
+                  dispatch(
+                    setModal({
+                      open: true,
+                      width: "80%",
+                      content: <Videoconference />,
+                    })
+                  );
+                }}
+              >
                 <img src="./images/portfolio/videoconference.jpg" alt="" />
                 <p className={styles.cardTitle}>Video Conference</p>
               </div>
             </div>
-            <div
-              className={styles.item}
-              onClick={() => {
-                dispatch(
-                  setModal({
-                    open: true,
-                    width: "80%",
-                    content: <WebSpeech />,
-                  })
-                );
-              }}
-            >
-              <div className={styles.card}>
+            <div className={styles.item}>
+              <div
+                className={styles.card}
+                onClick={() => {
+                  dispatch(
+                    setModal({
+                      open: true,
+                      width: "80%",
+                      content: <WebSpeech />,
+                    })
+                  );
+                }}
+              >
                 <img src="./images/portfolio/webspeech.png" alt="" />
                 <p className={styles.cardTitle}>Web Speech API</p>
               </div>
             </div>
-            <div
-              className={styles.item}
-              onClick={() => {
-                dispatch(
-                  setModal({
-                    open: true,
-                    width: "80%",
-                    content: <CitizenV />,
-                  })
-                );
-              }}
-            >
-              <div className={styles.card}>
+            <div className={styles.item}>
+              <div
+                className={styles.card}
+                onClick={() => {
+                  dispatch(
+                    setModal({
+                      open: true,
+                      width: "80%",
+                      content: <CitizenV />,
+                    })
+                  );
+                }}
+              >
                 <img src="./images/portfolio/citizen.png" alt="" />
                 <p className={styles.cardTitle}>Citizen Manager App</p>
               </div>
             </div>
             <div className={styles.item}>
-              <div className={styles.card}>
+              <div
+                className={styles.card}
+                onClick={() => {
+                  dispatch(
+                    setModal({
+                      open: true,
+                      width: "80%",
+                      content: <Bomberman />,
+                    })
+                  );
+                }}
+              >
                 <img src="./images/portfolio/bomberman.png" alt="" />
                 <p className={styles.cardTitle}>Bomberman Game</p>
               </div>

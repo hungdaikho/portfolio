@@ -4,7 +4,7 @@ type Props = {};
 
 const Certificate = ({}: Props) => {
   return (
-    <div className={styles.certificate}>
+    <div className={styles.certificate} id="testimonial">
       <div className={styles.container}>
         <div className={styles.title}>Certificate</div>
       </div>

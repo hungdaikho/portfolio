@@ -9,7 +9,7 @@ const Service = ({}: Props) => {
     (state: RootState) => state.service
   );
   return (
-    <div className={styles.service}>
+    <div className={styles.service} id="service">
       <div className={styles.container}>
         <div className={styles.title}>What I Do</div>
         <div className={styles.content}>

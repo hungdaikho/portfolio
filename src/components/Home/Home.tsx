@@ -26,7 +26,7 @@ const Home = ({}: Props) => {
     link.click();
   };
   return (
-    <div className={styles.home}>
+    <div className={styles.home} id="home">
       <div className={styles.content}>
         <div className={styles.avatar}>
           <img src="./images/avatar1.jpg" alt="" />

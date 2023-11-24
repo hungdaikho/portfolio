@@ -31,9 +31,15 @@ const Header = ({ scroll }: Props) => {
                 key={item.value}
                 onClick={() => {
                   onChangeMenuActive(item.value);
+                  document
+                    .getElementById(item.value)
+                    ?.scrollIntoView({ behavior: "smooth", block: "center" });
+                  if (activeMenu) {
+                    setActiveMenu(false);
+                  }
                 }}
               >
-                <img src={item.src} alt="" id={item.value} />
+                <img src={item.src} alt="" />
                 {item.name}
               </div>
             );
