@@ -19,7 +19,7 @@ export const defaultSocial: Array<ISocial> = [
   {
     value: "facebook",
     src: "./images/social/facebook.png",
-    link: "https://www.facebook.com/profile.php?id=61552199285705",
+    link: "https://www.facebook.com/profile.php?id=61556709616667",
   },
   {
     value: "twitter",
