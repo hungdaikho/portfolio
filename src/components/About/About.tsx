@@ -106,7 +106,7 @@ const About = ({}: Props) => {
           </div>
           <div className={styles.right}>
             <div className={styles.image}>
-              <img src="./images/avatar2.jpg" alt="" />
+              <img src="./images/anh2.jpg" alt="" />
               <div className={styles.experience}>
                 <div className={styles.info}>
                   <h3>4+ Years</h3>

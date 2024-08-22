@@ -29,7 +29,7 @@ const Home = ({}: Props) => {
     <div className={styles.home} id="home">
       <div className={styles.content}>
         <div className={styles.avatar}>
-          <img src="./images/avatar1.jpg" alt="" />
+          <img src="./images/anh1.jpg" alt="" />
         </div>
         <div className={styles.extract}>
           <h5>Hello, I'm Tran Van Hung</h5>
