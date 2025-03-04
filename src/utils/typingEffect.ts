@@ -1,5 +1,5 @@
 export const typingEffect = (element: HTMLElement, cursor: HTMLElement) => {
-  const content = ["Web Developer", "Graphic Design"];
+  const content = ["Web Developer","UI/UX Enthusiast", "Graphic Design"];
   let processing: number = 0;
   let processing_index: number = 0;
   let interval: any;

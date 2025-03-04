@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./About.module.scss";
 type Props = {};
 
-const About = ({}: Props) => {
+const About = ({ }: Props) => {
   return (
     <div className={styles.about} id="about">
       <div className={styles.container}>
@@ -14,9 +14,7 @@ const About = ({}: Props) => {
                 Hi, I'm <span>Tran Van Hung</span>
               </h3>
               <p>
-                Im a Freelancer Front-end Developer with over 4 years of
-                experience. Im from Ha Noi. I code and create web elements for
-                amazing people around the world. I like work with new people.
+                 Web Developer with 4+ years of experience, based in Hanoi. I build high-performance, user-centric websites for clients worldwide. Passionate about clean code, modern UI/UX, and creating seamless digital experiences. Always eager to collaborate and take on new challenges.
               </p>
             </div>
             <div className={styles.skills}>
@@ -98,9 +96,6 @@ const About = ({}: Props) => {
                     ></div>
                   </div>
                 </div>
-              </div>
-              <div className={styles.seeMore}>
-                <button>See More</button>
               </div>
             </div>
           </div>

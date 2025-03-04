@@ -6,7 +6,7 @@ import { RootState } from "@/redux/store";
 import { typingEffect } from "@/utils/typingEffect";
 type Props = {};
 
-const Home = ({}: Props) => {
+const Home = ({ }: Props) => {
   const typingRef: any = useRef();
   const cursor: any = useRef();
   const social: Array<ISocial> = useAppSelector(
@@ -38,8 +38,7 @@ const Home = ({}: Props) => {
             <span className={styles.cursorTyping} ref={cursor}></span>
           </h1>
           <p>
-            I'm a Fullstack Developer based In Vietnam, over 4 years of
-            professional experience.
+            Fullstack Developer | Crafting modern, high-performance web solutions and turning challenges into opportunities.
           </p>
           <div className={styles.social}>
             {social.map((s: ISocial) => {

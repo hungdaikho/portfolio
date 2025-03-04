@@ -9,7 +9,6 @@ import Pacs from "../Projects/Pacs";
 import Videoconference from "../Projects/VideoConference";
 import WebSpeech from "../Projects/WebSpeech";
 import CitizenV from "../Projects/CitizenV";
-import Bomberman from "../Projects/Bomberman";
 type Props = {};
 const Portfoli = ({}: Props) => {
   const boundRef: any = useRef();
@@ -114,23 +113,6 @@ const Portfoli = ({}: Props) => {
               >
                 <img src="./images/portfolio/citizen.png" alt="" />
                 <p className={styles.cardTitle}>Citizen Manager App</p>
-              </div>
-            </div>
-            <div className={styles.item}>
-              <div
-                className={styles.card}
-                onClick={() => {
-                  dispatch(
-                    setModal({
-                      open: true,
-                      width: "80%",
-                      content: <Bomberman />,
-                    })
-                  );
-                }}
-              >
-                <img src="./images/portfolio/bomberman.png" alt="" />
-                <p className={styles.cardTitle}>Bomberman Game</p>
               </div>
             </div>
           </Slider>

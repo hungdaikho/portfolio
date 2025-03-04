@@ -19,10 +19,7 @@ const Videoconference = ({}: Props) => {
           device, such as a computer, tablet or smartphone, and also needs an
           internet connection to be able to use it. Extremely high load
           capacity, providing video quality up to 8k60fps, time limitless and
-          horizontally scalable Test in{" "}
-          <a href="https://vrpacs.com:3018" target="_blank">
-            Video Conference
-          </a>
+          horizontally scalable.
         </div>
         <div className={styles.technical}>
           <div className={styles.title}>MY POSITION</div>
